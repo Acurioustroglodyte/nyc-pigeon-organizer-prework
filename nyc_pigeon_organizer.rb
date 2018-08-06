@@ -28,7 +28,6 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list.keys.include?(name)
           pigeon_list[name] = {}
         end
-        binding.pry
         # If current trait is not a key of current bird, add it, with the attribute
         if !pigeon_list[name].keys.include?(trait_key)
           pigeon_list[name][trait_key] = [atr_key.to_s]
